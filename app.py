@@ -11,7 +11,7 @@ if os.path.exists("methane_exceedance_model.pkl") and os.path.exists("scaler.pkl
     model = joblib.load("methane_exceedance_model.pkl")
     scaler = joblib.load("scaler.pkl")
 else:
-    st.warning("Model or scaler not found. Please upload 'model.pkl' and 'scaler.pkl'.")
+    st.warning("Model or scaler not found. Please upload 'methane_exceedance_model.pkl' and 'scaler.pkl'.")
     st.stop()
 
 if os.path.exists("dashboard_test_data.csv"):

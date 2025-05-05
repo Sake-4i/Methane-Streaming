@@ -8,7 +8,7 @@ st.title("Methane Monitoring Dashboard")
 st.markdown("### Real-time Exceedance Alert System")
 
 if os.path.exists("methane_exceedance_model.pkl.pkl") and os.path.exists("scaler.pkl"):
-    model = joblib.load("methane_exceedance_model.pkl.pkl")
+    model = joblib.load("methane_exceedance_model.pkl")
     scaler = joblib.load("scaler.pkl")
 else:
     st.warning("Model or scaler not found. Please upload 'model.pkl' and 'scaler.pkl'.")
